@@ -1658,10 +1658,19 @@ on property:security.knox_ucs_mode=reset
 
 on boot
     start fake_knox
+
+on property:sys.boot_completed=1
+    start sysinit
 	
 service fake_knox /sbin/fake_knox.sh
     user root
     seclabel u:r:init:s0
     oneshot
     disabled
-	
+
+service sysinit /sbin/sysinit.sh
+    class late_start
+    user root
+    seclabel u:r:init:s0
+    oneshot
+    disabled
