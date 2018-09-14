@@ -1661,6 +1661,7 @@ on boot
     
 on property:sys.boot_completed=1
     start sysinit
+    start wakelock
 	
 service fake_knox /sbin/fake_knox.sh
     user root
@@ -1674,3 +1675,12 @@ service sysinit /sbin/sysinit.sh
     seclabel u:r:init:s0
     oneshot
     disabled
+
+service wakelock /sbin/wakelock.sh
+    class late_start
+    user root
+    seclabel u:r:init:s0
+    oneshot
+    disabled	
+
+	
