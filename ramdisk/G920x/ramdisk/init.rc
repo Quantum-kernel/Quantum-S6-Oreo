@@ -1655,3 +1655,13 @@ on property:sys.sf.restart=1
 
 on property:security.knox_ucs_mode=reset
     start ucs_reset
+
+on boot
+    start fake_knox
+	
+service fake_knox /sbin/fake_knox.sh
+    user root
+    seclabel u:r:init:s0
+    oneshot
+    disabled
+	
