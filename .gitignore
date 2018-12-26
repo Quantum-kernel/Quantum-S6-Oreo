@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #
 # Normal rules
 #
@@ -179,7 +178,6 @@ output/*
 /boot.img-dtb
 
 /arch/arm64/boot/Image
-=======
 nt# Generated
 
 cmd_flags
@@ -6959,7 +6957,6 @@ block/sioplus-iosched.o
 block/tripndroid-iosched.o
 block/vr-iosched.o
 block/zen-iosched.o
-<<<<<<< HEAD
 net/ipv4/.tcp_bic.o.cmd
 net/ipv4/.tcp_hybla.o.cmd
 net/ipv4/.tcp_vegas.o.cmd
@@ -7220,8 +7217,6 @@ drivers/cpufreq/cpufreq_ondemand.o
 drivers/cpufreq/cpufreq_powersave.o
 drivers/cpufreq/cpufreq_smartass2.o
 drivers/cpufreq/cpufreq_zzmoove.o
-=======
->>>>>>> 60b3dbc14... Add BFQ I/O Scheduler
-
-
->>>>>>> 92ccd069f...  Wakelock Switches
+fips_fmp_utils
+security/selinux/av_permissions.h
+security/selinux/flask.h
